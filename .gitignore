@@ -1,0 +1,23 @@
+# IDE related
+.idea/            # JetBrains IDEs (IntelliJ, PyCharm, WebStorm, etc.)
+.vscode          # VS Code settings & extensions
+*.iml             # JetBrains module files
+*.suo             # Visual Studio user settings
+*.ntvs*           # Node.js Tools for Visual Studio
+*.njsproj         # Node.js project files in Visual Studio
+*.sln             # Visual Studio solution files (optional)
+*.csproj          # Visual Studio C# project files (optional)
+*.vs/             # Visual Studio working folder
+.DS_Store         # macOS Finder metadata
+Thumbs.db         # Windows thumbnail cache
+
+# Temporary files
+*.log             # Log files
+*.tmp             # Temporary files
+*.swp             # Vim swap files
+*.bak             # Backup files
+
+# Language specific
+
+
+
