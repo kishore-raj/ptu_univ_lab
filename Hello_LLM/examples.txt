@@ -1,0 +1,238 @@
+Prompting demo List of prompts
+
+----------Temperature changes: 
+
+Prompt: "describe a dosa"
+tab1: temp:0 , o/p tokens 50 
+
+tab2: temp:2, o/p tokens 50 
+
+
+
+
+
+--------------Zero Shot - 
+
+Translate the following English sentence into Spanish: 'The sky is blue.'
+
+---------------Few shot - 
+
+*"Translate the following: 1. Hello → Hola  2.Thank you → Gracias 3.Good night → ???"
+
+--------------Role Based -
+
+system message: You are a vegetarian chef, helps only on assisting vegetarian dishes
+
+user message: tell me how to cook chicken 65
+
+--------------COT-
+
+A train leaves Chennai at 8 AM, traveling at 60 km/h. Another train leaves Bangalore at 9 AM, traveling at 80 km/h towards Chennai. The distance between the cities is 350 km. At what time will they meet? think step by step
+
+
+------------------Full prompt structure: 
+
+
+persona: You are a AI daily news assistant, only responds daily news details  
+Answer the questions only based on the following RSS feed context
+
+context:
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>World News, Today World News, Latest International News, World Breaking News, Trending News of World - Times of India</title>
+<link>https://timesofindia.indiatimes.com/world</link>
+<description>World News Today: Read the latest world news headlines, Current International breaking news world wide. In depth analysis and top news headlines world wide.</description>
+<language>en-gb</language>
+<lastBuildDate>2025-03-29T06:13:06+05:30</lastBuildDate>
+<atom:link type="application/rss+xml" rel="self" href="https://timesofindia.indiatimes.com/rssfeeds/296589292.cms"/>
+<copyright>Copyright:(C) Sat, 29 Mar 2025 06:13:06 IST Bennett Coleman & Co. Ltd, http://in.indiatimes.com/policyterms/1554651.cms</copyright>
+<docs>http://syndication.indiatimes.com/</docs>
+<image>
+<title>World News, Today World News, Latest International News, World Breaking News, Trending News of World - Times of India</title>
+<url>https://timesofindia.indiatimes.com/photo/507610.cms</url>
+<link>https://timesofindia.indiatimes.com/world</link>
+</image>
+<item>
+<title>US judge blocks Trump administration's effort to shut down consumer financial protection bureau</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119681945.cms" />A federal judge stopped the Trump administration's effort to close the Consumer Financial Protection Bureau, preserving its function until a final verdict is reached. The court's intervention aims to prevent irreparable harm, helping maintain consumer protections established after the 2008 financial crisis.</description>
+<link>https://timesofindia.indiatimes.com/world/us/us-judge-blocks-trump-administrations-effort-to-shut-down-consumer-financial-protection-bureau/articleshow/119681945.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/us-judge-blocks-trump-administrations-effort-to-shut-down-consumer-financial-protection-bureau/articleshow/119681945.cms</guid>
+<pubDate>2025-03-29T05:56:56+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119682167,imgsize-24950.cms"/>
+</item>
+<item>
+<title>Why did Donald Trump pull Elise Stefanik's UN nomination? Here's the answer</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119682006.cms" />President Trump withdrew Elise Stefanik’s UN ambassador nomination to maintain the Republican majority in the House, considering the risky electoral landscape. This decision was driven by upcoming tough votes and concerns over possible vacant seats in New York and Florida’s districts.</description>
+<link>https://timesofindia.indiatimes.com/world/us/why-did-donald-trump-pull-elise-stefaniks-un-nomination-heres-the-answer/articleshow/119682006.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/why-did-donald-trump-pull-elise-stefaniks-un-nomination-heres-the-answer/articleshow/119682006.cms</guid>
+<pubDate>2025-03-29T05:50:26+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119681968,imgsize-1426906.cms"/>
+</item>
+<item>
+<title>Three dead and over 200 rescued after severe storms flood streets of Texas</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119680652.cms" />At least three fatalities and over 200 rescues have been reported due to severe storms in southern Texas, prompting ongoing rescue operations. Harlingen received more than 21 inches of rain, causing widespread flooding and power outages across several counties. Emergency shelters were set up, and a tornado watch was issued for Liberty and Polk Counties.</description>
+<link>https://timesofindia.indiatimes.com/world/us/three-dead-and-over-200-rescued-after-severe-storms-flood-streets-of-texas/articleshow/119680652.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/three-dead-and-over-200-rescued-after-severe-storms-flood-streets-of-texas/articleshow/119680652.cms</guid>
+<pubDate>2025-03-29T05:37:24+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119681441,imgsize-148944.cms"/>
+</item>
+<item>
+<title>Appeals court clears way for Elon Musk's DOGE to keep operating at USAID</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119677588.cms" />A federal appeals court overturned a previous ruling that had blocked cuts to the US Agency for International Development (USAID), which were influenced by Elon Musk's department. The court found Musk acted as an advisor to President Trump, not making the final decisions himself.</description>
+<link>https://timesofindia.indiatimes.com/world/us/appeals-court-clears-way-for-elon-musks-doge-to-keep-operating-at-usaid/articleshow/119677588.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/appeals-court-clears-way-for-elon-musks-doge-to-keep-operating-at-usaid/articleshow/119677588.cms</guid>
+<pubDate>2025-03-29T04:06:22+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119677716,imgsize-1429989.cms"/>
+</item>
+<item>
+<title>Elon Musk sells X platform to his xAI company</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119676390.cms" />Elon Musk's xAI has acquired social media platform X in an all-stock deal valuing X at $33 billion. The merger aims to combine xAI's advanced AI capabilities with X's extensive user base to create smarter and more meaningful experiences, highlighting Musk's commitment to truth-seeking AI.</description>
+<link>https://timesofindia.indiatimes.com/world/us/elon-musk-sells-x-platform-to-his-xai-company/articleshow/119676390.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/elon-musk-sells-x-platform-to-his-xai-company/articleshow/119676390.cms</guid>
+<pubDate>2025-03-29T03:33:59+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119676490,imgsize-634211.cms"/>
+</item>
+<item>
+<title>Elon Musk's multi-million dollar election gambit triggers legal battle</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119674908.cms" />Billionaire Elon Musk faces legal action after pledging $1 million to influence Wisconsin’s Supreme Court race, supporting Republican Brad Schimel. Wisconsin’s Attorney General is taking steps to counter Musk's offer, which aims at influencing critical rulings on abortion and voting. Musk’s involvement highlights his growing political influence and aligns with Trump's support for shifting the court to a conservative majority.</description>
+<link>https://timesofindia.indiatimes.com/world/us/elon-musks-multi-million-dollar-election-gambit-triggers-legal-battle/articleshow/119674908.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/elon-musks-multi-million-dollar-election-gambit-triggers-legal-battle/articleshow/119674908.cms</guid>
+<pubDate>2025-03-29T03:15:46+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119674924,imgsize-592879.cms"/>
+</item>
+<item>
+<title>Judges extend restrictions on Donald Trump’s plan to deport Venezuelan gang members</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119675881.cms" />A federal judge in DC has extended a restraining order preventing the Trump administration from deporting Venezuelan nationals under an old wartime law. The administration claims these individuals are gang members, while opponents argue against its legality. The Supreme Court is being asked to review the decision, with further hearings scheduled for April 8.</description>
+<link>https://timesofindia.indiatimes.com/world/us/judges-extend-restrictions-on-donald-trumps-plan-to-deport-venezuelan-gang-members/articleshow/119675881.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/judges-extend-restrictions-on-donald-trumps-plan-to-deport-venezuelan-gang-members/articleshow/119675881.cms</guid>
+<pubDate>2025-03-29T03:15:44+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119675893,imgsize-26584.cms"/>
+</item>
+<item>
+<title>'Migrant influencer' who urged illegals to squat in American homes kicked out of US</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119671860.cms" />Leonel Moreno, a Venezuelan migrant known for flaunting US benefits and encouraging illegal actions, has been deported to Venezuela amid President Trump's tightened deportation efforts. Moreno, infamous for his TikTok antics, was arrested for non-compliance with ICE. Despite claiming persecution, his deportation, which had faced delays, marks a significant action under the Trump administration's crackdown on illegal immigration.</description>
+<link>https://timesofindia.indiatimes.com/world/us/from-tiktok-to-takeoff-migrant-influencer-who-urged-illegals-to-squat-in-american-homes-kicked-out-of-us/articleshow/119671860.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/from-tiktok-to-takeoff-migrant-influencer-who-urged-illegals-to-squat-in-american-homes-kicked-out-of-us/articleshow/119671860.cms</guid>
+<pubDate>2025-03-29T02:45:00+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119673305,imgsize-995429.cms"/>
+</item>
+<item>
+<title>Tesla under attack— and Elon Musk says he knows who's behind it</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119670501.cms" />Elon Musk blames political rhetoric for rising attacks on Tesla owners and businesses, targeting individuals spreading anti-Tesla narratives. He accuses Democratic leaders of fueling resentment due to criticism of his role at the department of government efficiency (DOGE). Musk revealed potential Trump administration actions against those propagating lies, likening his challenges to those faced by President Trump.</description>
+<link>https://timesofindia.indiatimes.com/world/us/tesla-under-attack-and-elon-musk-says-he-knows-whos-behind-it/articleshow/119670501.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/tesla-under-attack-and-elon-musk-says-he-knows-whos-behind-it/articleshow/119670501.cms</guid>
+<pubDate>2025-03-29T02:04:55+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119670534,imgsize-770146.cms"/>
+</item>
+<item>
+<title>JD Vance says Denmark has 'under invested' in Greenland</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119672890.cms" />US Vice President JD Vance criticised Denmark for inadequate protection of Greenland's security during his recent visit. He highlighted under-investment in the region and stressed its strategic importance. Amid renewed US interest in acquiring Greenland, Vance expects a peaceful negotiation. Danish and Greenlandic leaders condemned the uninvited visit, with a poll showing most Greenlanders opposing US annexation.</description>
+<link>https://timesofindia.indiatimes.com/world/us/jd-vance-says-denmark-has-under-invested-in-greenland/articleshow/119672890.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/jd-vance-says-denmark-has-under-invested-in-greenland/articleshow/119672890.cms</guid>
+<pubDate>2025-03-29T01:27:55+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119672923,imgsize-1002781.cms"/>
+</item>
+<item>
+<title>Hawaii woman says doctor husband attacked her 10 times with rock</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119666859.cms" />A Hawaii doctor, Gerhardt Konig, has been charged with attempted murder after allegedly attacking his wife, Arielle Konig, on a hiking trail by striking her with a rock and attempting to inject her with syringes. The attack was interrupted by a witness, and Konig is currently awaiting his preliminary hearing.</description>
+<link>https://timesofindia.indiatimes.com/world/us/hawaii-woman-says-doctor-husband-attacked-her-10-times-with-rock-tried-to-inject-her-before-witness-stepped-in/articleshow/119666859.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/hawaii-woman-says-doctor-husband-attacked-her-10-times-with-rock-tried-to-inject-her-before-witness-stepped-in/articleshow/119666859.cms</guid>
+<pubDate>2025-03-28T23:55:12+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119669247,imgsize-1339778.cms"/>
+</item>
+<item>
+<title>Nepal protests: What led citizens to protest for restoration of monarchy</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119666434.cms" />Kathmandu experienced violent clashes on Friday as pro-monarchy demonstrators demanded the return of former King Gyanendra Shah. The unrest left two dead and over 30 injured, leading authorities to impose a curfew and call in the army. Protesters, frustrated with corruption and instability, torched vehicles and vandalized offices as security forces used tear gas and water cannons to disperse crowds.</description>
+<link>https://timesofindia.indiatimes.com/world/south-asia/nepal-protests-what-led-citizens-to-protest-for-restoration-of-monarchy/articleshow/119666434.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/south-asia/nepal-protests-what-led-citizens-to-protest-for-restoration-of-monarchy/articleshow/119666434.cms</guid>
+<pubDate>2025-03-28T22:33:13+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119666575,imgsize-1466383.cms"/>
+</item>
+<item>
+<title>US accuses Danish leaders of mistreating Greenlanders as 'second-class citizens' amid VP Vance's visit</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119666444.cms" /></description>
+<link>https://timesofindia.indiatimes.com/world/us/us-accuses-danish-leaders-of-mistreating-greenlanders-as-second-class-citizens-amid-vp-vances-visit/articleshow/119666444.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/us-accuses-danish-leaders-of-mistreating-greenlanders-as-second-class-citizens-amid-vp-vances-visit/articleshow/119666444.cms</guid>
+<pubDate>2025-03-28T22:32:28+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119666535,imgsize-468363.cms"/>
+</item>
+<item>
+<title>Man caught on camera keying Tesla Cybertruck outside resort in New Hampshire</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119665502.cms" />A man was captured on video allegedly keying a Tesla Cybertruck at a New Hampshire hotel, leading to a police investigation into the act of vandalism. Law enforcement is coordinating with the Coos County attorney's office to potentially press charges against the suspect. The incident adds to the rising reports of vandalism against Tesla vehicles.</description>
+<link>https://timesofindia.indiatimes.com/world/us/man-caught-on-camera-keying-tesla-cybertruck-outside-resort-in-new-hampshire/articleshow/119665502.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/man-caught-on-camera-keying-tesla-cybertruck-outside-resort-in-new-hampshire/articleshow/119665502.cms</guid>
+<pubDate>2025-03-28T22:10:34+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119665832,imgsize-981067.cms"/>
+</item>
+<item>
+<title>Dem candidate caught applauding call for violence against whites</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119662633.cms" />Newark Mayor Ras Baraka faces criticism after a 2004 video showing him praising controversial Nation of Islam leader Louis Farrakhan resurfaced. Baraka praised Farrakhan’s moral authority and stood by his lifelong work for justice amid backlash. Farrakhan’s controversial statements and Baraka’s ongoing association with him have sparked debate, though Baraka defends the Nation of Islam's influence in Black communities.</description>
+<link>https://timesofindia.indiatimes.com/world/us/top-democratic-candidate-caught-on-camera-applauding-radical-call-for-violence-against-whites/articleshow/119662633.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/top-democratic-candidate-caught-on-camera-applauding-radical-call-for-violence-against-whites/articleshow/119662633.cms</guid>
+<pubDate>2025-03-28T20:47:49+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119662841,imgsize-730722.cms"/>
+</item>
+<item>
+<title>Trump admin seeks SC approval to resume venezuelan migrant deportations</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119663761.cms" />The Trump administration has requested the Supreme Court to resume deportations of Venezuelan migrants, which had been blocked by a lower court. The legal dispute centers around the use of the 18th-century Alien Enemies Act and its implications for national security and diplomatic negotiations. Chief Justice John Roberts has defended judicial independence amid political pressure.</description>
+<link>https://timesofindia.indiatimes.com/world/us/trump-administration-asks-supreme-court-for-permission-to-resume-deporting-venezuelan-migrants-under-wartime-law/articleshow/119663761.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/trump-administration-asks-supreme-court-for-permission-to-resume-deporting-venezuelan-migrants-under-wartime-law/articleshow/119663761.cms</guid>
+<pubDate>2025-03-28T21:18:37+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119663927,imgsize-885452.cms"/>
+</item>
+<item>
+<title>'We agreed on many things': Donald Trump says had 'extremely productive' call with Canada PM Mark Carney</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119663070.cms" /></description>
+<link>https://timesofindia.indiatimes.com/world/us/we-agreed-on-many-things-donald-trump-says-had-extremely-productive-call-with-canada-pm-mark-carney/articleshow/119663070.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/we-agreed-on-many-things-donald-trump-says-had-extremely-productive-call-with-canada-pm-mark-carney/articleshow/119663070.cms</guid>
+<pubDate>2025-03-28T20:59:29+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119663230,imgsize-1025081.cms"/>
+</item>
+<item>
+<title>Behind the scenes with Elon Musk and DOGE team's mission to streamline federal operations</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119660403.cms" />Elon Musk and DOGE detail plans to reduce government spending by 15% through cutting waste and fraud, saving taxpayers $130 billion. Despite pushback and scrutiny over the department's methods, Musk argues that preventing fraud aligns with legal requirements, ensuring taxpayer money is spent correctly.</description>
+<link>https://timesofindia.indiatimes.com/world/us/behind-the-scenes-with-elon-musk-and-doge-teams-mission-to-streamline-federal-operations/articleshow/119660403.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/behind-the-scenes-with-elon-musk-and-doge-teams-mission-to-streamline-federal-operations/articleshow/119660403.cms</guid>
+<pubDate>2025-03-28T20:03:28+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119660893,imgsize-592879.cms"/>
+</item>
+<item>
+<title>'Not the first jolt of magnitude 7': NCS director on Myanmar earthquakes</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119659891.cms" />Myanmar experienced six significant earthquakes along the Sagaing Fault, with the strongest being 7.2 and 7.0 magnitudes. These tremors, occurring at shallow depths, caused damage in Bangkok due to its high liquefaction risk. The National Centre for Seismology highlights the region's history of strong seismic activity and continues to monitor aftershocks.</description>
+<link>https://timesofindia.indiatimes.com/world/rest-of-world/not-the-first-jolt-of-magnitude-7-ncs-director-on-myanmar-earthquakes/articleshow/119659891.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/rest-of-world/not-the-first-jolt-of-magnitude-7-ncs-director-on-myanmar-earthquakes/articleshow/119659891.cms</guid>
+<pubDate>2025-03-28T19:48:53+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119660730,imgsize-1844741.cms"/>
+</item>
+<item>
+<title>'We’re all shocked — shocked!': Hilary Clinton bashes Donald Trump over Signal war chat leak</title>
+<description><img border="0" hspace="10" align="left" style="margin-top:3px;margin-right:5px;" src="https://timesofindia.indiatimes.com/photo/119657967.cms" /></description>
+<link>https://timesofindia.indiatimes.com/world/us/were-all-shocked-shocked-hilary-clinton-bashes-donald-trump-over-signal-war-chat-leak/articleshow/119657967.cms</link>
+<guid>https://timesofindia.indiatimes.com/world/us/were-all-shocked-shocked-hilary-clinton-bashes-donald-trump-over-signal-war-chat-leak/articleshow/119657967.cms</guid>
+<pubDate>2025-03-28T19:23:28+05:30</pubDate>
+<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">TOI World Desk</dc:creator>
+<enclosure type="image/jpeg" url="https://static.toiimg.com/photo/msid-119659215,imgsize-785795.cms"/>
+</item>
+</channel>
+</rss>
+
+user message
